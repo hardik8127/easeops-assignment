@@ -1,0 +1,40 @@
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pytype/
+
+# Tests
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Dev scripts (local only)
+seed_*.py
+make_*.py
+update_*.py
+
+# OS
+.DS_Store
+Thumbs.db
