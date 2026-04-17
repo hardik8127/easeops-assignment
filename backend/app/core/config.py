@@ -22,5 +22,9 @@ class Settings(BaseSettings):
 
     FRONTEND_URL: str = "http://localhost:5173"
 
+    @property
+    def allowed_origins(self) -> list[str]:
+        return [o.strip() for o in self.FRONTEND_URL.split(",")]
+
 
 settings = Settings()
