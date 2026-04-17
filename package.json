@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm install --prefix frontend && npm run build --prefix frontend",
-    "heroku-postbuild": "npm install --prefix frontend && ./frontend/node_modules/.bin/vite build --config frontend/vite.config.ts"
-  },
-  "engines": {
-    "node": "20.x",
-    "npm": "10.x"
+    "build:frontend": "npm install --prefix frontend && npm run build --prefix frontend"
   }
 }
